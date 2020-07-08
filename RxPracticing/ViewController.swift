@@ -12,15 +12,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // Observables.doObservable()
-        // PublishSubjects.doPublishSubject()
-        // BehaviorSubjects.doBehaviorSubjects()
+        //Do any additional setup after loading the view.
+        //Observables.doObservable()
+        //PublishSubjects.doPublishSubject()
+        //BehaviorSubjects.doBehaviorSubjects()
         
-        // ReplaySubjects.doReplaySubjects()
-        // Variables.doVariables()
-        
-        Maps.doMaps()
+        //ReplaySubjects.doReplaySubjects()
+        //Variables.doVariables()
+        //Maps.doMaps()
+        FlatMaps.doFlatMaps()
     }
     
     
