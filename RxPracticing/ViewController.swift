@@ -17,7 +17,8 @@ class ViewController: UIViewController {
 //        PublishSubjects.doPublishSubject()
         //BehaviorSubjects.doBehaviorSubjects()
         
-        ReplaySubjects.doReplaySubjects()
+       // ReplaySubjects.doReplaySubjects()
+        Variables.doVariables()
     }
 
 

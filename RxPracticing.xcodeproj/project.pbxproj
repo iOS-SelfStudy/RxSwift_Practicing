@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E4EF7C043819D6DF8DA5656 /* Pods_RxPracticing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE5269BB6729ACB929FBBB /* Pods_RxPracticing.framework */; };
+		875147A124B66BA9003EB302 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875147A024B66BA9003EB302 /* Variables.swift */; };
 		875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC4624B3D0D6001684DA /* AppDelegate.swift */; };
 		875CFC4924B3D0D7001684DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC4824B3D0D7001684DA /* SceneDelegate.swift */; };
 		875CFC4B24B3D0D7001684DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC4A24B3D0D7001684DA /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		75EE5269BB6729ACB929FBBB /* Pods_RxPracticing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPracticing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A58E9955929E86AD40C8B9 /* Pods-RxPracticing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPracticing.debug.xcconfig"; path = "Target Support Files/Pods-RxPracticing/Pods-RxPracticing.debug.xcconfig"; sourceTree = "<group>"; };
+		875147A024B66BA9003EB302 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		875CFC4324B3D0D6001684DA /* RxPracticing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPracticing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875CFC4624B3D0D6001684DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875CFC4824B3D0D7001684DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				875CFC5E24B3DC0D001684DA /* PublishSubject.swift */,
 				875CFC6024B3F616001684DA /* BehaviorSubjects.swift */,
 				87B0F80724B536BE00585BBE /* ReplaySubjects.swift */,
+				875147A024B66BA9003EB302 /* Variables.swift */,
 			);
 			path = Practicing;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				875CFC6124B3F616001684DA /* BehaviorSubjects.swift in Sources */,
 				875CFC5F24B3DC0D001684DA /* PublishSubject.swift in Sources */,
 				875CFC5C24B3D197001684DA /* Observables.swift in Sources */,
+				875147A124B66BA9003EB302 /* Variables.swift in Sources */,
 				875CFC4B24B3D0D7001684DA /* ViewController.swift in Sources */,
 				875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */,
 				87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */,
