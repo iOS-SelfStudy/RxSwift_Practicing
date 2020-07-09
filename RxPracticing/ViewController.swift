@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         //ReplaySubjects.doReplaySubjects()
         //Variables.doVariables()
         //Maps.doMaps()
-        FlatMaps.doFlatMaps()
+       // FlatMaps.doFlatMaps()
+      Filters.doFilters()
     }
     
     

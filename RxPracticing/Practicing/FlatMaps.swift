@@ -30,11 +30,6 @@ class FlatMaps {
         
         gameSubject.onNext(game1)
         gameSubject.onNext(game2)
-        
         game2.price.value = 155.33
-        
     }
-    
-    
-    
 }
