@@ -18,20 +18,23 @@ class Filters {
         $0.starts(with: "a")
     }.subscribe(onNext:{
       print("\($0) start with a")
-      }).addDisposableTo(disposeBage)
+    }).addDisposableTo(disposeBage)
     
     
+    
+    // another example
     _  = Observable.just(["mohamed" , "ahmed" , "sara" , "mona","omar" , "ziad"])
       .map {
-        $0.filter {
-          $0.contains("m")
+        return $0.filter {
+          print("\($0) filter")
+          return $0.contains("m")
         }
     }.subscribe(onNext:{
       print("\($0)  has m")
-      }).dispose()
+    }).dispose()
     
     
-
+    
   }
   
 }

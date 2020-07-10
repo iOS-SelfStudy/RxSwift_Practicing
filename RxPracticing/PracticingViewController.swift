@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    let o = [1,2,56,5]
+class PracticingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -17,14 +16,13 @@ class ViewController: UIViewController {
         //Observables.doObservable()
         //PublishSubjects.doPublishSubject()
         //BehaviorSubjects.doBehaviorSubjects()
-        
+      
         //ReplaySubjects.doReplaySubjects()
         //Variables.doVariables()
         //Maps.doMaps()
-        // FlatMaps.doFlatMaps()
+        //FlatMaps.doFlatMaps()
         //Filters.doFilters()
-      
-      Zip.doZip()
+        //Zip.doZip()
     }
     
     
