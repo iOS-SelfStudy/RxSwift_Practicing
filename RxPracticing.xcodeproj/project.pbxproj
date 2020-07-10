@@ -21,6 +21,7 @@
 		875CFC5F24B3DC0D001684DA /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC5E24B3DC0D001684DA /* PublishSubject.swift */; };
 		875CFC6124B3F616001684DA /* BehaviorSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC6024B3F616001684DA /* BehaviorSubjects.swift */; };
 		877F122524B7DB45006B912C /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122424B7DB45006B912C /* Filters.swift */; };
+		877F122724B7EE4C006B912C /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122624B7EE4C006B912C /* Zip.swift */; };
 		87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0F80724B536BE00585BBE /* ReplaySubjects.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		875CFC5E24B3DC0D001684DA /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		875CFC6024B3F616001684DA /* BehaviorSubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubjects.swift; sourceTree = "<group>"; };
 		877F122424B7DB45006B912C /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		877F122624B7EE4C006B912C /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		87B0F80724B536BE00585BBE /* ReplaySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjects.swift; sourceTree = "<group>"; };
 		EB58875CEB9A276EA689D003 /* Pods-RxPracticing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPracticing.release.xcconfig"; path = "Target Support Files/Pods-RxPracticing/Pods-RxPracticing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				875147A224B68064003EB302 /* Maps.swift */,
 				875147A424B686E2003EB302 /* FlatMaps.swift */,
 				877F122424B7DB45006B912C /* Filters.swift */,
+				877F122624B7EE4C006B912C /* Zip.swift */,
 			);
 			path = Practicing;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */,
 				87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */,
 				875CFC4924B3D0D7001684DA /* SceneDelegate.swift in Sources */,
+				877F122724B7EE4C006B912C /* Zip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

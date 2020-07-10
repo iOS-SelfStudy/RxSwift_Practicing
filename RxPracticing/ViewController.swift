@@ -9,9 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    let o = [1,2,56,5]
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         //Do any additional setup after loading the view.
         //Observables.doObservable()
         //PublishSubjects.doPublishSubject()
@@ -20,8 +21,10 @@ class ViewController: UIViewController {
         //ReplaySubjects.doReplaySubjects()
         //Variables.doVariables()
         //Maps.doMaps()
-       // FlatMaps.doFlatMaps()
-      Filters.doFilters()
+        // FlatMaps.doFlatMaps()
+        //Filters.doFilters()
+      
+      Zip.doZip()
     }
     
     
