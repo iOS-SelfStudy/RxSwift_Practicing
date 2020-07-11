@@ -24,6 +24,7 @@
 		877F122524B7DB45006B912C /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122424B7DB45006B912C /* Filters.swift */; };
 		877F122724B7EE4C006B912C /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122624B7EE4C006B912C /* Zip.swift */; };
 		87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0F80724B536BE00585BBE /* ReplaySubjects.swift */; };
+		87DEF44124B93DAE00D354C2 /* AddNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DEF44024B93DAE00D354C2 /* AddNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		877F122424B7DB45006B912C /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		877F122624B7EE4C006B912C /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		87B0F80724B536BE00585BBE /* ReplaySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjects.swift; sourceTree = "<group>"; };
+		87DEF44024B93DAE00D354C2 /* AddNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameViewController.swift; sourceTree = "<group>"; };
 		EB58875CEB9A276EA689D003 /* Pods-RxPracticing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPracticing.release.xcconfig"; path = "Target Support Files/Pods-RxPracticing/Pods-RxPracticing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				875CFC4824B3D0D7001684DA /* SceneDelegate.swift */,
 				875CFC4A24B3D0D7001684DA /* PracticingViewController.swift */,
 				8700E92924B8D70000D88B6A /* NamerViewController.swift */,
+				87DEF44024B93DAE00D354C2 /* AddNameViewController.swift */,
 				875CFC4C24B3D0D7001684DA /* Main.storyboard */,
 				875CFC4F24B3D0D8001684DA /* Assets.xcassets */,
 				875CFC5124B3D0D8001684DA /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				877F122524B7DB45006B912C /* Filters.swift in Sources */,
 				8700E92A24B8D70000D88B6A /* NamerViewController.swift in Sources */,
 				875147A124B66BA9003EB302 /* Variables.swift in Sources */,
+				87DEF44124B93DAE00D354C2 /* AddNameViewController.swift in Sources */,
 				875147A524B686E2003EB302 /* FlatMaps.swift in Sources */,
 				875CFC4B24B3D0D7001684DA /* PracticingViewController.swift in Sources */,
 				875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */,

@@ -15,6 +15,7 @@ class NamerViewController: UIViewController {
   @IBOutlet weak var nameEntryTextField: UITextField!
   @IBOutlet weak var submitBtn: UIButton!
   @IBOutlet weak var namesLbl: UILabel!
+  @IBOutlet weak var addNameFromANotherVCBtn: UIButton!
   
   var namesArray:Variable<[String]> = Variable([])
 //  let namesArray  :BehaviorRelay<[String]> = BehaviorRelay(value: [])
@@ -25,6 +26,8 @@ class NamerViewController: UIViewController {
     
     bindTextToLabel(sender: nameEntryTextField, receiver: helloLabel)
     bindSubmitButton()
+    setubNamesObservaion()
+    setupAddNameFromVcBtnBinding()
   }
   
   func bindTextToLabel(sender : UITextField , receiver:UILabel){
@@ -41,11 +44,31 @@ class NamerViewController: UIViewController {
     _ = submitBtn.rx.tap.subscribe(onNext:{
       if self.nameEntryTextField.text != "" {
         self.namesArray.value.append(self.nameEntryTextField.text!)
-        self.namesLbl.rx.text.onNext(self.namesArray.value.joined(separator: " - "))
+        //self.namesLbl.rx.text.onNext(self.namesArray.value.joined(separator: " - "))
         self.nameEntryTextField.rx.text.onNext("")
         self.helloLabel.rx.text.onNext("Type your name")
       }
       }).disposed(by: disposeBage)
     
   }
+  
+  func setubNamesObservaion() {
+    namesArray.asObservable().subscribe(onNext:{
+      self.namesLbl.text = $0.joined(separator: " - ")
+      }).addDisposableTo(disposeBage)
+  }
+  
+  
+  func setupAddNameFromVcBtnBinding(){
+   _ = addNameFromANotherVCBtn.rx.tap.throttle(.microseconds(500), scheduler: MainScheduler.instance)
+      .subscribe(onNext:{
+        guard let AddNameVc = self.storyboard?.instantiateViewController(identifier: "\(AddNameViewController.self)") as? AddNameViewController else {return}
+      _ =  AddNameVc.nameSubject.subscribe(onNext:{
+          self.namesArray.value.append($0)
+        AddNameVc.dismiss(animated: true, completion: nil)
+      }).addDisposableTo(self.disposeBage)
+        self.present(AddNameVc, animated: true, completion: nil)
+      })
+  }
+  
 }
