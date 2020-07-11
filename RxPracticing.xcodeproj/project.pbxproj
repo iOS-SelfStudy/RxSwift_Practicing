@@ -21,6 +21,15 @@
 		875CFC5C24B3D197001684DA /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC5B24B3D197001684DA /* Observables.swift */; };
 		875CFC5F24B3DC0D001684DA /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC5E24B3DC0D001684DA /* PublishSubject.swift */; };
 		875CFC6124B3F616001684DA /* BehaviorSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CFC6024B3F616001684DA /* BehaviorSubjects.swift */; };
+		875EF65E24BA043A001D1360 /* TrendingFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF65D24BA043A001D1360 /* TrendingFeedsViewController.swift */; };
+		875EF66024BA044B001D1360 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF65F24BA044B001D1360 /* SearchViewController.swift */; };
+		875EF66224BA0F61001D1360 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66124BA0F61001D1360 /* RoundedBorderButton.swift */; };
+		875EF66424BA1305001D1360 /* RoundBoarderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66324BA1305001D1360 /* RoundBoarderTextField.swift */; };
+		875EF66724BA203D001D1360 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66624BA203D001D1360 /* Repo.swift */; };
+		875EF66A24BA25F8001D1360 /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66924BA25F8001D1360 /* TrendingRepoCell.swift */; };
+		875EF66D24BA3B44001D1360 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66C24BA3B44001D1360 /* Constants.swift */; };
+		875EF67024BA405C001D1360 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66F24BA405C001D1360 /* NetworkLayer.swift */; };
+		875EF67224BA6A84001D1360 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */; };
 		877F122524B7DB45006B912C /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122424B7DB45006B912C /* Filters.swift */; };
 		877F122724B7EE4C006B912C /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122624B7EE4C006B912C /* Zip.swift */; };
 		87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0F80724B536BE00585BBE /* ReplaySubjects.swift */; };
@@ -45,6 +54,15 @@
 		875CFC5B24B3D197001684DA /* Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
 		875CFC5E24B3DC0D001684DA /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		875CFC6024B3F616001684DA /* BehaviorSubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubjects.swift; sourceTree = "<group>"; };
+		875EF65D24BA043A001D1360 /* TrendingFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedsViewController.swift; sourceTree = "<group>"; };
+		875EF65F24BA044B001D1360 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		875EF66124BA0F61001D1360 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
+		875EF66324BA1305001D1360 /* RoundBoarderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBoarderTextField.swift; sourceTree = "<group>"; };
+		875EF66624BA203D001D1360 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		875EF66924BA25F8001D1360 /* TrendingRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
+		875EF66C24BA3B44001D1360 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		875EF66F24BA405C001D1360 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		877F122424B7DB45006B912C /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		877F122624B7EE4C006B912C /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		87B0F80724B536BE00585BBE /* ReplaySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjects.swift; sourceTree = "<group>"; };
@@ -94,12 +112,11 @@
 		875CFC4524B3D0D6001684DA /* RxPracticing */ = {
 			isa = PBXGroup;
 			children = (
+				875EF65C24BA027E001D1360 /* Versi App */,
+				87DEF44424B9466100D354C2 /* Namer Demo */,
 				875CFC5A24B3D15E001684DA /* Practicing */,
 				875CFC4624B3D0D6001684DA /* AppDelegate.swift */,
 				875CFC4824B3D0D7001684DA /* SceneDelegate.swift */,
-				875CFC4A24B3D0D7001684DA /* PracticingViewController.swift */,
-				8700E92924B8D70000D88B6A /* NamerViewController.swift */,
-				87DEF44024B93DAE00D354C2 /* AddNameViewController.swift */,
 				875CFC4C24B3D0D7001684DA /* Main.storyboard */,
 				875CFC4F24B3D0D8001684DA /* Assets.xcassets */,
 				875CFC5124B3D0D8001684DA /* LaunchScreen.storyboard */,
@@ -120,8 +137,66 @@
 				875147A424B686E2003EB302 /* FlatMaps.swift */,
 				877F122424B7DB45006B912C /* Filters.swift */,
 				877F122624B7EE4C006B912C /* Zip.swift */,
+				875CFC4A24B3D0D7001684DA /* PracticingViewController.swift */,
 			);
 			path = Practicing;
+			sourceTree = "<group>";
+		};
+		875EF65C24BA027E001D1360 /* Versi App */ = {
+			isa = PBXGroup;
+			children = (
+				875EF66E24BA4049001D1360 /* NetworkLayer */,
+				875EF66B24BA3B2A001D1360 /* Utilities */,
+				875EF66824BA25C3001D1360 /* View */,
+				875EF66524BA201D001D1360 /* Model */,
+				875EF65D24BA043A001D1360 /* TrendingFeedsViewController.swift */,
+				875EF65F24BA044B001D1360 /* SearchViewController.swift */,
+				875EF66124BA0F61001D1360 /* RoundedBorderButton.swift */,
+				875EF66324BA1305001D1360 /* RoundBoarderTextField.swift */,
+				875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */,
+			);
+			path = "Versi App";
+			sourceTree = "<group>";
+		};
+		875EF66524BA201D001D1360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				875EF66624BA203D001D1360 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		875EF66824BA25C3001D1360 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				875EF66924BA25F8001D1360 /* TrendingRepoCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		875EF66B24BA3B2A001D1360 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				875EF66C24BA3B44001D1360 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		875EF66E24BA4049001D1360 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				875EF66F24BA405C001D1360 /* NetworkLayer.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		87DEF44424B9466100D354C2 /* Namer Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8700E92924B8D70000D88B6A /* NamerViewController.swift */,
+				87DEF44024B93DAE00D354C2 /* AddNameViewController.swift */,
+			);
+			path = "Namer Demo";
 			sourceTree = "<group>";
 		};
 		D58D08013C3A35D1E9FA92E8 /* Frameworks */ = {
@@ -251,16 +326,25 @@
 				875CFC5F24B3DC0D001684DA /* PublishSubject.swift in Sources */,
 				875147A324B68064003EB302 /* Maps.swift in Sources */,
 				875CFC5C24B3D197001684DA /* Observables.swift in Sources */,
+				875EF66424BA1305001D1360 /* RoundBoarderTextField.swift in Sources */,
 				877F122524B7DB45006B912C /* Filters.swift in Sources */,
 				8700E92A24B8D70000D88B6A /* NamerViewController.swift in Sources */,
+				875EF65E24BA043A001D1360 /* TrendingFeedsViewController.swift in Sources */,
+				875EF67224BA6A84001D1360 /* SearchTableViewCell.swift in Sources */,
+				875EF66224BA0F61001D1360 /* RoundedBorderButton.swift in Sources */,
 				875147A124B66BA9003EB302 /* Variables.swift in Sources */,
 				87DEF44124B93DAE00D354C2 /* AddNameViewController.swift in Sources */,
+				875EF66D24BA3B44001D1360 /* Constants.swift in Sources */,
 				875147A524B686E2003EB302 /* FlatMaps.swift in Sources */,
+				875EF66024BA044B001D1360 /* SearchViewController.swift in Sources */,
 				875CFC4B24B3D0D7001684DA /* PracticingViewController.swift in Sources */,
+				875EF66A24BA25F8001D1360 /* TrendingRepoCell.swift in Sources */,
+				875EF67024BA405C001D1360 /* NetworkLayer.swift in Sources */,
 				875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */,
 				87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */,
 				875CFC4924B3D0D7001684DA /* SceneDelegate.swift in Sources */,
 				877F122724B7EE4C006B912C /* Zip.swift in Sources */,
+				875EF66724BA203D001D1360 /* Repo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

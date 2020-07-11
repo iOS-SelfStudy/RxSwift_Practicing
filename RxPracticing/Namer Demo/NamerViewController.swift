@@ -29,7 +29,6 @@ class NamerViewController: UIViewController {
     setubNamesObservaion()
     setupAddNameFromVcBtnBinding()
   }
-  
   func bindTextToLabel(sender : UITextField , receiver:UILabel){
     sender.rx.text
       .map{
@@ -38,7 +37,6 @@ class NamerViewController: UIViewController {
       .bind(to: receiver.rx.text)
       .disposed(by: disposeBage)
   }
-  
   func bindSubmitButton(){
     
     _ = submitBtn.rx.tap.subscribe(onNext:{
@@ -49,15 +47,12 @@ class NamerViewController: UIViewController {
         self.helloLabel.rx.text.onNext("Type your name")
       }
       }).disposed(by: disposeBage)
-    
   }
-  
   func setubNamesObservaion() {
     namesArray.asObservable().subscribe(onNext:{
       self.namesLbl.text = $0.joined(separator: " - ")
       }).addDisposableTo(disposeBage)
   }
-  
   
   func setupAddNameFromVcBtnBinding(){
    _ = addNameFromANotherVCBtn.rx.tap.throttle(.microseconds(500), scheduler: MainScheduler.instance)
