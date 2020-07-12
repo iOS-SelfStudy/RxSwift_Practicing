@@ -30,6 +30,9 @@
 		875EF66D24BA3B44001D1360 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66C24BA3B44001D1360 /* Constants.swift */; };
 		875EF67024BA405C001D1360 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF66F24BA405C001D1360 /* NetworkLayer.swift */; };
 		875EF67224BA6A84001D1360 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */; };
+		875EF67524BA98BF001D1360 /* UIViewController + Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF67424BA98BF001D1360 /* UIViewController + Safari.swift */; };
+		875EF67724BA98E7001D1360 /* Date + today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF67624BA98E7001D1360 /* Date + today.swift */; };
+		875EF67924BA990C001D1360 /* UIButton + Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EF67824BA990C001D1360 /* UIButton + Colors.swift */; };
 		877F122524B7DB45006B912C /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122424B7DB45006B912C /* Filters.swift */; };
 		877F122724B7EE4C006B912C /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F122624B7EE4C006B912C /* Zip.swift */; };
 		87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0F80724B536BE00585BBE /* ReplaySubjects.swift */; };
@@ -63,6 +66,9 @@
 		875EF66C24BA3B44001D1360 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		875EF66F24BA405C001D1360 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		875EF67424BA98BF001D1360 /* UIViewController + Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Safari.swift"; sourceTree = "<group>"; };
+		875EF67624BA98E7001D1360 /* Date + today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + today.swift"; sourceTree = "<group>"; };
+		875EF67824BA990C001D1360 /* UIButton + Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Colors.swift"; sourceTree = "<group>"; };
 		877F122424B7DB45006B912C /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		877F122624B7EE4C006B912C /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		87B0F80724B536BE00585BBE /* ReplaySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjects.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 		875EF65C24BA027E001D1360 /* Versi App */ = {
 			isa = PBXGroup;
 			children = (
+				875EF67324BA98A6001D1360 /* Extensions */,
 				875EF66E24BA4049001D1360 /* NetworkLayer */,
 				875EF66B24BA3B2A001D1360 /* Utilities */,
 				875EF66824BA25C3001D1360 /* View */,
@@ -153,7 +160,6 @@
 				875EF65F24BA044B001D1360 /* SearchViewController.swift */,
 				875EF66124BA0F61001D1360 /* RoundedBorderButton.swift */,
 				875EF66324BA1305001D1360 /* RoundBoarderTextField.swift */,
-				875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */,
 			);
 			path = "Versi App";
 			sourceTree = "<group>";
@@ -170,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				875EF66924BA25F8001D1360 /* TrendingRepoCell.swift */,
+				875EF67124BA6A84001D1360 /* SearchTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,6 +195,16 @@
 				875EF66F24BA405C001D1360 /* NetworkLayer.swift */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		875EF67324BA98A6001D1360 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				875EF67424BA98BF001D1360 /* UIViewController + Safari.swift */,
+				875EF67624BA98E7001D1360 /* Date + today.swift */,
+				875EF67824BA990C001D1360 /* UIButton + Colors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		87DEF44424B9466100D354C2 /* Namer Demo */ = {
@@ -330,6 +347,7 @@
 				877F122524B7DB45006B912C /* Filters.swift in Sources */,
 				8700E92A24B8D70000D88B6A /* NamerViewController.swift in Sources */,
 				875EF65E24BA043A001D1360 /* TrendingFeedsViewController.swift in Sources */,
+				875EF67524BA98BF001D1360 /* UIViewController + Safari.swift in Sources */,
 				875EF67224BA6A84001D1360 /* SearchTableViewCell.swift in Sources */,
 				875EF66224BA0F61001D1360 /* RoundedBorderButton.swift in Sources */,
 				875147A124B66BA9003EB302 /* Variables.swift in Sources */,
@@ -338,10 +356,12 @@
 				875147A524B686E2003EB302 /* FlatMaps.swift in Sources */,
 				875EF66024BA044B001D1360 /* SearchViewController.swift in Sources */,
 				875CFC4B24B3D0D7001684DA /* PracticingViewController.swift in Sources */,
+				875EF67924BA990C001D1360 /* UIButton + Colors.swift in Sources */,
 				875EF66A24BA25F8001D1360 /* TrendingRepoCell.swift in Sources */,
 				875EF67024BA405C001D1360 /* NetworkLayer.swift in Sources */,
 				875CFC4724B3D0D6001684DA /* AppDelegate.swift in Sources */,
 				87B0F80824B536BE00585BBE /* ReplaySubjects.swift in Sources */,
+				875EF67724BA98E7001D1360 /* Date + today.swift in Sources */,
 				875CFC4924B3D0D7001684DA /* SceneDelegate.swift in Sources */,
 				877F122724B7EE4C006B912C /* Zip.swift in Sources */,
 				875EF66724BA203D001D1360 /* Repo.swift in Sources */,

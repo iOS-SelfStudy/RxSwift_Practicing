@@ -21,6 +21,11 @@ class Zip {
       print("\($0) :  in subscribe 1")
     }).dispose()
     
+    Observable.zip(names1 , names2).bind { a , b  in
+      print(a)
+      print(b)
+    }
+    
   }
   
 }

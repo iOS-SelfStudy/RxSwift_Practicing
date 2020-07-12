@@ -22,7 +22,7 @@ class PracticingViewController: UIViewController {
         //Maps.doMaps()
         //FlatMaps.doFlatMaps()
         //Filters.doFilters()
-        //Zip.doZip()
+       // Zip.doZip()
     }
     
     

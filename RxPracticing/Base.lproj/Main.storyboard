@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UAB-H1-edI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -129,7 +129,7 @@
                                 <color key="textColor" red="0.2784313725" green="0.54901960780000003" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="131" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Ib-1k7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="131" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Ib-1k7">
                                 <rect key="frame" x="8" y="142" width="398" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -166,7 +166,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CET-3R-YWR">
-                                                            <rect key="frame" x="16" y="65" width="129" height="30"/>
+                                                            <rect key="frame" x="16" y="65" width="250.5" height="30"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-m2-W8U">
                                                                     <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
@@ -186,14 +186,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1M-FT-S5N">
-                                                                    <rect key="frame" x="66" y="0.0" width="3" height="30"/>
+                                                                    <rect key="frame" x="119" y="0.0" width="3" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="3" id="aiS-yg-D55"/>
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gUp-se-8Te">
-                                                                    <rect key="frame" x="85" y="0.0" width="44" height="30"/>
+                                                                    <rect key="frame" x="174.5" y="0.0" width="76" height="30"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="languageIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p4m-UJ-OeG">
                                                                             <rect key="frame" x="0.0" y="0.0" width="24" height="30"/>
@@ -202,7 +202,10 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otg-D9-9g9">
-                                                                            <rect key="frame" x="26" y="0.0" width="18" height="30"/>
+                                                                            <rect key="frame" x="26" y="0.0" width="50" height="30"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="50" id="pOK-Cj-Ayp"/>
+                                                                            </constraints>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -211,7 +214,6 @@
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="129" id="VMh-Tx-qv4"/>
                                                                 <constraint firstAttribute="height" constant="30" id="gKc-Wg-X2W"/>
                                                             </constraints>
                                                         </stackView>
@@ -220,6 +222,7 @@
                                                     <constraints>
                                                         <constraint firstItem="Lej-aI-NNt" firstAttribute="leading" secondItem="YMT-W9-Afv" secondAttribute="leading" constant="16" id="0rG-hX-0OE"/>
                                                         <constraint firstAttribute="bottom" secondItem="m9f-qv-s2E" secondAttribute="bottom" constant="18" id="2QU-Sy-y75"/>
+                                                        <constraint firstItem="CET-3R-YWR" firstAttribute="width" secondItem="YMT-W9-Afv" secondAttribute="width" multiplier="0.7" id="3bu-TJ-yoB"/>
                                                         <constraint firstItem="m9f-qv-s2E" firstAttribute="top" secondItem="YMT-W9-Afv" secondAttribute="top" constant="18" id="5Hn-cg-bEP"/>
                                                         <constraint firstAttribute="trailing" secondItem="m9f-qv-s2E" secondAttribute="trailing" constant="8" id="7Cd-Yg-6fV"/>
                                                         <constraint firstItem="CET-3R-YWR" firstAttribute="leading" secondItem="YMT-W9-Afv" secondAttribute="leading" constant="16" id="GCI-qJ-Byj"/>

@@ -17,21 +17,25 @@ class SearchTableViewCell: UITableViewCell {
   @IBOutlet weak var repoNameLbl: UILabel!
   
   @IBOutlet weak var backView: UIView!
-  private var repoUrl:String?
-  
-  override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    backView.layer.cornerRadius = 15
-    }
-
-  func ConfigerCell(repo:Repo) {
-  
-    repoNameLbl.text = repo.name
-    repoDescLbl.text = repo.description
-    forksCountLbl.text = String(repo.numberOfDownloads)
-    languageLbl.text = repo.language
-    repoUrl = repo.url
-  }
+  public private(set) var repoUrl:String?
+  func configureCell(repo: Repo) {
+    print(repo.language)
+         repoUrl = repo.url
+    
+    githubImageView.image = repo.image
+         repoNameLbl.text = repo.name
+         repoDescLbl.text = repo.description
+         forksCountLbl.text = String(describing: repo.numberOfDownloads)
+         languageLbl.text = repo.language
+    print(repo.language)
+     }
+     
+     override func layoutSubviews() {
+         backView.layer.cornerRadius = 15
+         backView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+         backView.layer.shadowOpacity = 0.25
+         backView.layer.shadowRadius = 3.0
+         backView.layer.shadowOffset = CGSize(width: 0, height: 0)
+     }
   
 }

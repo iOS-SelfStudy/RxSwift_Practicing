@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TrendingRepoCell: UITableViewCell {
 
@@ -22,6 +24,8 @@ class TrendingRepoCell: UITableViewCell {
 
   @IBOutlet weak var viewReadMeBtn: RoundButton!
   
+  private var repoUrl :String?
+  let disposeBage = DisposeBag()
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,13 +33,19 @@ class TrendingRepoCell: UITableViewCell {
 
   
   func ConfigerCell(repo:Repo) {
+    
+    
     repoImageView.image = repo.image
     repoNameLbl.text = repo.name
     repoDescLbl.text = repo.description
     numberOfForksLbl.text = String(repo.numberOfDownloads)
     conributorLbl.text = String(repo.numberOfContributors)
     languageLbl.text = repo.language
+    repoUrl = repo.url
     
+    viewReadMeBtn.rx.tap.subscribe(onNext:{
+      self.window?.rootViewController?.presentSafariWebViewFor(url: self.repoUrl!)
+      }).addDisposableTo(disposeBage)
     
   }
   
